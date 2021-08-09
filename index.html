@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil Munj's portfolio</title>
+
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="img01" />
+    </div>
+    <div class="top-card">
+      <div class="top-nav">
+        <h2>Nikhil Munj</h2>
+        <ul class="mobile-top-list">
+          <li class="tabs"><a href="index.html">HOME</a></li>
+          <li class="tabs"><a href="#pfolio">PORTFOLIO</a></li>
+          <li class="tabs"><a href="#contact">CONTACT</a></li>
+          <li class="tabs"><a href="Project_1/index.html#project2_skills">SKILLS</a></li>
+        </ul>
+
+        <nav class="tablet-top-nav">
+          <a href="index.html">HOME</a>
+          <a href="#pfolio">PORTFOLIO</a>
+          <a href="#contact">CONTACT</a>
+          <a href="Project_1/index.html#project2_skills">SKILLS</a>
+        </nav>
+      </div>
+      <div class="profile-container">
+        <p class="proftext">
+          Hi! I'm a front end developer who loves responsive design and css. I
+          recently finished a degree in front-end web development at Treehouse
+          and am excited to put all my skills to use!
+        </p>
+        <img
+          class="profile-img"
+          src="images/responsive-layout-profile.png"
+          alt=""
+          id="myImg"
+          onclick="openModal(this)"
+        />
+      </div>
+    </div>
+    
+    <h4 id="pfolio">PORTFOLIO</h4>
+    <div class="parent">
+      <div class="child">
+        <img src="images/portfolio-1.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Marketing Page</h3>
+        <p>
+          This project shows the front page of a marketing website meant for a
+          specific business I'm interested in.
+        </p>
+      </div>
+
+      <div class="child">
+        <img src="images/portfolio-2.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Search Page</h3>
+        <p>
+          This project searches through a specific database to find information
+          that the user is trying to look up.
+        </p>
+      </div>
+      <div class="child">
+        <img src="images/portfolio-3.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Travel App</h3>
+        <p>
+          This project compares travel times based on different transportation
+          methods and tells you the best one.
+        </p>
+      </div>
+      <div class="child">
+        <img src="images/portfolio-4.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Map of Favorite Spots</h3>
+        <p>
+          This project uses mapping apis to plot points of my favourite spots in
+          the city for do-it-yourself walking tour.
+        </p>
+      </div>
+      <div class="child">
+        <img src="images/portfolio-5.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Photo Gallery</h3>
+        <p>
+          This project shows pictures from a recent trip to the viewer and
+          allows them to easily navigate through photos.
+        </p>
+      </div>
+      <div class="child">
+        <img src="images/portfolio-6.png" alt="" id="myImg"
+        onclick="openModal(this)"/>
+        <h3>Calculator</h3>
+        <p>
+          Someone can enter in the numbers they want, and press the big blue
+          button and get the result.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <h4 id="contact">Contact</h4>
+      <p>
+        If you're interested in chatting or want more information about what
+        I've been working on, I'd love to hear from you!
+      </p>
+      <p>Phone &nbsp; <b>+1(111) 555-1234</b></p>
+      <p>Email &nbsp; <b> email@yoursite.com</b></p>
+      <hr id="hr-line" />
+      <nav class="bottom-nav-mobile">
+        <a class="bottom-mobile-name" href="index.html">Nikhil Munj</a>
+        <a href="index.html">BACK TO TOP</a>
+      </nav>
+
+      <nav class="bottom-nav">
+        <a class="name" href="index.html">Nikhil Munj</a>
+        <a href="index.html">HOME</a>
+        <a href="#pfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+    <script src="javaScript/modal.js"></script>
+  </body>
+</html>
